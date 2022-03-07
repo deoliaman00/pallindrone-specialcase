@@ -1,0 +1,24 @@
+
+#include <iostream>
+
+using namespace std;
+
+bool isPalindrome(int x) 
+{
+    if(x<0|| (x!=0 && x%10==0)) return false;
+    int sum=0;
+    while(x>sum)//(23>2)
+    {
+        sum = sum*10+x%10; cout<<sum
+        x = x/10;//x=23
+    }
+    return (x==sum)||(x==sum/10);
+}
+
+int main()
+{
+    bool a=isPalindrome(2332);
+    cout<<a;
+
+    return 0;
+}
